@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./Button.css";
+import classes from "./Button.module.css";
 // import styled from "styled-components";
 
 // const Button = styled.button`
@@ -25,7 +25,7 @@ import "./Button.css";
 
 const Button = props => {
   return (
-    <button className="button" onClick={props.onClick}>
+    <button className={classes.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
